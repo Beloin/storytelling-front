@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DecoupageComponent } from './decoupage/component/decoupage-component/decoupage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DecoupageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
