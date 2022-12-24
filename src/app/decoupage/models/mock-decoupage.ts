@@ -7,7 +7,9 @@ export function createMockDecoupage(quantity = 10): DecoupageModel[] {
     let order = 0;
     const decoupageArray = []
     while (quantity > 0) {
+
         const decoupage = new DecoupageModel(
+            faker.word.noun(),
             order, faker.name.firstName(),
             faker.word.noun() + " " + faker.word.adjective(),
             `${generateRandomBetween(99)}:${generateRandomBetween(60)}:${generateRandomBetween(60)}`,

@@ -1,0 +1,7 @@
+.table-div {
+    border: 5px solid;
+}
+
+:host ::ng-deep .row-accessories {
+    background-color: rgba(0,0,0,.15) !important;
+}

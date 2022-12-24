@@ -4,6 +4,7 @@ export type NamedObjectArray = {
 
 export class DecoupageModel {
     constructor(
+        $id: string,
         $decoupageOrder: number,
         $interviewed: string,
         $subject: string,
@@ -15,6 +16,7 @@ export class DecoupageModel {
         $sentiments: NamedObjectArray,
         $sentimentActions: NamedObjectArray
     ) {
+        this.id = $id;
         this.decoupageOrder = $decoupageOrder;
         this.interviewed = $interviewed;
         this.subject = $subject;
@@ -27,6 +29,7 @@ export class DecoupageModel {
         this.sentimentActions = $sentimentActions;
     }
 
+    private id: string;
     private decoupageOrder: number; // "order" is a redgistered token
 
     private interviewed: string; // LIMIT 255
